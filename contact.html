@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact &amp; Réservation — L'Usine Melun</title>
+  <meta name="description" content="Contactez L'Usine à Melun, réservez votre table, consultez nos horaires et retrouvez-nous au 9 route de Nangis, 77000 Melun." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">L'<span>Usine</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="menu.html">La Carte</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+      <li><a href="contact.html" class="nav-cta">Réserver</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <div class="page-hero-bg contact-bg"></div>
+    <div class="page-hero-overlay"></div>
+    <div class="page-hero-content">
+      <h1>Contact &amp; Réservation</h1>
+      <p>Nous serons ravis de vous accueillir à L'Usine</p>
+    </div>
+  </div>
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Infos -->
+        <div class="contact-info">
+          <h2>Nous trouver</h2>
+          <p>L'Usine vous accueille 7 jours sur 7 dans une ambiance chaleureuse et décontractée. Pour toute réservation de groupe ou événement privé, contactez-nous directement.</p>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-detail-text">
+              <strong>Adresse</strong>
+              <span>9 Route de Nangis, 77000 Melun</span>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-detail-text">
+              <strong>Téléphone</strong>
+              <a href="tel:+33164391419">01 64 39 14 19</a>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon"><i class="fa-solid fa-clock"></i></div>
+            <div class="contact-detail-text">
+              <strong>Horaires d'ouverture</strong>
+              <table class="hours-table">
+                <tr><td>Lundi</td><td>11h30 – 23h00</td></tr>
+                <tr><td>Mardi</td><td>11h30 – 23h00</td></tr>
+                <tr><td>Mercredi</td><td>11h30 – 23h00</td></tr>
+                <tr><td>Jeudi</td><td>11h30 – 23h00</td></tr>
+                <tr><td>Vendredi</td><td>11h30 – 23h00</td></tr>
+                <tr><td>Samedi</td><td>11h30 – 23h30</td></tr>
+                <tr><td>Dimanche</td><td>11h30 – 22h30</td></tr>
+              </table>
+            </div>
+          </div>
+
+          <div class="contact-detail" style="margin-top:1.5rem">
+            <div class="contact-detail-icon"><i class="fa-brands fa-instagram"></i></div>
+            <div class="contact-detail-text">
+              <strong>Réseaux sociaux</strong>
+              <span>
+                <a href="https://www.instagram.com/lusine_restaurant?igsh=aWJvb3c2M2ZjbWoz" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i> Instagram</a>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulaire -->
+        <div class="contact-form-wrap">
+          <h3>Réserver une table</h3>
+          <p>Remplissez le formulaire et nous vous confirmerons votre réservation dans les plus brefs délais.</p>
+
+          <form id="reservationForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="prenom">Prénom *</label>
+                <input type="text" id="prenom" name="prenom" placeholder="Jean" required />
+              </div>
+              <div class="form-group">
+                <label for="nom">Nom *</label>
+                <input type="text" id="nom" name="nom" placeholder="Dupont" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="jean@exemple.fr" required />
+              </div>
+              <div class="form-group">
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date souhaitée *</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="heure">Heure *</label>
+                <select id="heure" name="heure" required>
+                  <option value="">Choisir…</option>
+                  <option>11h30</option>
+                  <option>12h00</option>
+                  <option>12h30</option>
+                  <option>13h00</option>
+                  <option>13h30</option>
+                  <option>19h00</option>
+                  <option>19h30</option>
+                  <option>20h00</option>
+                  <option>20h30</option>
+                  <option>21h00</option>
+                  <option>21h30</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="couverts">Nombre de couverts *</label>
+              <select id="couverts" name="couverts" required>
+                <option value="">Choisir…</option>
+                <option>1 personne</option>
+                <option>2 personnes</option>
+                <option>3 personnes</option>
+                <option>4 personnes</option>
+                <option>5 personnes</option>
+                <option>6 personnes</option>
+                <option>7 à 10 personnes</option>
+                <option>Plus de 10 personnes</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message (allergies, occasion spéciale…)</label>
+              <textarea id="message" name="message" placeholder="Précisez toute information utile pour votre réservation…"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit">
+              <i class="fa-solid fa-paper-plane"></i>&nbsp; Envoyer la demande
+            </button>
+          </form>
+
+          <div class="form-success" id="formSuccess">
+            <i class="fa-solid fa-circle-check"></i>
+            <strong>Demande envoyée !</strong>
+            <p style="margin-top:0.4rem;font-size:0.88rem;color:rgba(245,237,228,0.6)">Nous vous confirmerons votre réservation par email ou téléphone très prochainement.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP -->
+  <div class="map-section">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2648.7!2d2.6536!3d48.5357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e5fa4e6a5a5a5a%3A0x1234567890abcdef!2s9%20Rte%20de%20Nangis%2C%2077000%20Melun!5e0!3m2!1sfr!2sfr!4v1700000000000"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="L'Usine — 9 Route de Nangis, 77000 Melun">
+    </iframe>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">L'<span>Usine</span></a>
+        <p>Brasserie-pub au décor industriel anglo-saxon. Burgers, plats bistro et spécialités locales à Melun depuis plus de 20 ans.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/lusine_restaurant?igsh=aWJvb3c2M2ZjbWoz" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="menu.html">La Carte</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html">Réservation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Horaires</h4>
+        <ul class="footer-hours">
+          <li><span class="day">Lun – Ven</span><span>11h30 – 23h</span></li>
+          <li><span class="day">Samedi</span><span>11h30 – 23h30</span></li>
+          <li><span class="day">Dimanche</span><span>11h30 – 22h30</span></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li>9 Rte de Nangis</li>
+          <li>77000 Melun</li>
+          <li><a href="tel:+33164391419">01 64 39 14 19</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 L'Usine — Melun. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
